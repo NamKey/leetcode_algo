@@ -7,7 +7,7 @@ package Week1;
 // 2. 더해지는 숫자를 다음 index부터 찾아나가면서 target과 같은지 확인
 
 // -> 순열
-class Solution {
+class Problem_1 {
     public static int[] twoSum(int[] nums, int target) {
 
         int lhs;
@@ -31,17 +31,17 @@ class Solution {
 
     public static void main(String[] args) {
         int[] inputs = {1, 3, 5, 6};
-        int[] outputs1 = Solution.twoSum(inputs, 4);
+        int[] outputs1 = Problem_1.twoSum(inputs, 4);
 
         assert (outputs1[0] == 0);
         assert (outputs1[1] == 1);
 
-        int[] outputs2 = Solution.twoSum(inputs, 11);
+        int[] outputs2 = Problem_1.twoSum(inputs, 11);
 
         assert (outputs2[0] == 2);
         assert (outputs2[1] == 3);
 
-        int[] outputs3 = Solution.twoSum(inputs, 9);
+        int[] outputs3 = Problem_1.twoSum(inputs, 9);
 
         assert (outputs3[0] == 1);
         assert (outputs3[1] == 3);
