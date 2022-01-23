@@ -1,4 +1,5 @@
 # Problem1 - two Sum
+- link : https://leetcode.com/problems/two-sum/
 ## Intro
 - 순열을 생성하여 생성한 숫자 Pair의 합이 target과 같은지 비교하는 문제
 
