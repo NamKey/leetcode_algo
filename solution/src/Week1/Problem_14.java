@@ -1,6 +1,7 @@
 package Week1;
 
 class Problem_14 {
+
     public String longestCommonPrefix(String[] strs) {
 
         StringBuilder sb = new StringBuilder();

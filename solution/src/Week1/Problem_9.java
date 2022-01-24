@@ -7,7 +7,7 @@ package Week1;
 // 2. 자릿수 맞춰서 배열 생성
 // 3. 숫자를 각각 맞춰서 배열에 넣음
 // 4.
-class Problem_2 {
+class Problem_9 {
     public static boolean isPalindrome(int x) {
         if (x < 0) {
             return false;
@@ -47,16 +47,16 @@ class Problem_2 {
     }
 
     public static void main(String[] args) {
-        boolean result1 = Problem_2.isPalindrome(121);
+        boolean result1 = Problem_9.isPalindrome(121);
         assert (result1);
 
-        boolean result2 = Problem_2.isPalindrome(101);
+        boolean result2 = Problem_9.isPalindrome(101);
         assert (result2);
 
-        boolean result3 = Problem_2.isPalindrome(1221);
+        boolean result3 = Problem_9.isPalindrome(1221);
         assert (result3);
 
-        boolean result4 = Problem_2.isPalindrome(1223);
+        boolean result4 = Problem_9.isPalindrome(1223);
         assert (!result4);
     }
 }
