@@ -1,18 +1,8 @@
 
 class Solution {
     public int mySqrt(int x) {
-        int result = 0;
-        if (x <= 1) {
-            return x;
-        }
-        
-        for (long i = 0; i <= x; i++) {
-            if (i * i > x) {
-                result = (int) (i - 1);
-                break;
-            }
-        }
-
-        return result;
+        int left = (int)Math.pow(Math.E, 0.5 * Math.log(x));
+        int right = left + 1;
+        return (long) right * right > x? left : right;
     }
 }
