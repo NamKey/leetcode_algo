@@ -15,8 +15,10 @@ class Solution {
         int mid = (start + end) / 2;
         int lindex = -1;
         int rindex = -1;
-        if (target <= nums[mid]) {
-            lindex = searchInsertRecursive(nums, start, mid, target);
+        if (target == nums[mid]) {
+            return mid;
+        } else if (target < nums[mid]) {
+            lindex = searchInsertRecursive(nums, start, mid - 1, target);
         } else {
             rindex = searchInsertRecursive(nums, mid + 1, end, target);
         }
