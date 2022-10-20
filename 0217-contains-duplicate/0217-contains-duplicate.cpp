@@ -1,15 +1,16 @@
-#include <map>
+#include <unordered_set>
 
 class Solution {
     
 public:
     bool containsDuplicate(vector<int>& nums) {
-        map<int, int> numMap;
+        unordered_set<int> numSet;
         
         for (int num: nums) {
-            numMap[num]++;
-            if (numMap[num] > 1) {
+            if (numSet.find(num) != numSet.end()) {
                 return true;
+            } else {
+                numSet.insert(num);
             }
         }
         
